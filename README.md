@@ -1,1 +1,1 @@
-# lecture-template
+# Second lecture on functions
