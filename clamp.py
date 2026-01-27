@@ -6,5 +6,10 @@ def clamp(x: float, low: float = 0, high: float = 1) -> float:
     return x
 
 
-print(clamp(1.7))
-print(clamp(1.7, high=10))
+def main():
+    print(clamp(1.7))
+    print(clamp(1.7, high=10))
+
+
+if __name__ == "__main__":
+    main()
