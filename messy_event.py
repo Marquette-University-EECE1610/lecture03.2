@@ -11,26 +11,25 @@ attendees = int(input("Enter number of attendees: "))
 cost_per_person = float(input("Enter food cost per person: "))
 room_fee = float(input("Enter room rental fee: "))
 
-av_choice = input("Do you need AV support (yes/no)? ")
+audio_visual_choice = input("Do you need AV support (yes/no)? ")
 
 # magic numbers
 tax_rate = 0.055
-av_fee = 150.0
 
 # food cost
 food_total = attendees * cost_per_person
 
-# AV cost
-if av_choice == "yes":
-    av_total = av_fee
+# Audio Visual cost
+if audio_visual_choice == "yes":
+    audio_visual_total = 150.0
 else:
-    av_total = 0.0
+    audio_visual_total = 0.0
 
 # subtotal
-subtotal = food_total + room_fee + av_total
+subtotal = food_total + room_fee + audio_visual_total
 
 # tax
-tax = subtotal * tax_rate
+tax = subtotal * 0.055
 
 # total cost
 total_cost = subtotal + tax
@@ -47,7 +46,7 @@ print("Event Cost Summary")
 print("------------------")
 print("Food cost:", food_total)
 print("Room fee:", room_fee)
-print("AV cost:", av_total)
+print("AV cost:", audio_visual_total)
 print("Tax:", tax)
 print("Total cost:", total_cost)
 print("Cost per attendee:", per_person)

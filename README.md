@@ -13,5 +13,3 @@ Short Python snippets for an introductory programming lecture. Each file is a sm
 
 ## Running the examples
 Requires Python 3.9.11+.
-
-Use these as starting points for exercises such as adding more tests to [asserts.py](asserts.py), refactoring [messy_event.py](messy_event.py) into functions, or experimenting with scopes in [scope_demo.py](scope_demo.py).
