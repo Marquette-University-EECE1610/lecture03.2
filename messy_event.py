@@ -13,8 +13,6 @@ room_fee = float(input("Enter room rental fee: "))
 
 audio_visual_choice = input("Do you need AV support (yes/no)? ")
 
-# magic numbers
-tax_rate = 0.055
 
 # food cost
 food_total = attendees * cost_per_person
